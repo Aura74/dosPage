@@ -1,0 +1,53 @@
+/* All background is black, text is green, font is monospace to simulate DOS */
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#console {
+  width: 80%;
+  height: 80%;
+  border: 1px solid #00ff00;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#output {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#input-line span {
+  margin-right: 10px;
+}
+
+#user-input {
+  background-color: black;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2em;
+}
+
+#user-input::placeholder {
+  color: #007700;
+}
+
+input {
+  caret-color: #00ff00; /* Green cursor */
+}

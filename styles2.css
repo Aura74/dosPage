@@ -1,0 +1,97 @@
+/* General page layout */
+body {
+  background-color: black;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+}
+
+/* Console (DOS terminal) section */
+#console {
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid #00ff00;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+#output {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#input-line span {
+  margin-right: 10px;
+}
+
+#user-input {
+  background-color: black;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2em;
+}
+
+#user-input::placeholder {
+  color: #007700;
+}
+
+input {
+  caret-color: #00ff00; /* Green cursor */
+}
+
+/* Links section */
+#links {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #00ff00;
+}
+
+#links h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 10px;
+}
+
+#links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#links li {
+  margin-bottom: 15px;
+}
+
+#links a {
+  color: #00ff00;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+#links a:hover {
+  color: #00cc00;
+}
