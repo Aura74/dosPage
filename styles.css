@@ -49,5 +49,26 @@ body {
 }
 
 input {
-  caret-color: #00ff00; /* Green cursor */
+  caret-color: #00ff00; /* Grön markör */
+}
+
+/* Länkar får samma gröna färg och stil som övrig text */
+a {
+  color: #00ff00;
+  text-decoration: none; /* Tar bort understrykning */
+  font-family: inherit; /* Ärver font från föräldern */
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  white-space: nowrap; /* Förhindrar radbrytning */
+  flex-wrap: nowrap; /* Förhindrar flexelement från att brytas */
+}
+
+#input-line span {
+  display: inline;
+  margin-right: 10px;
+  white-space: nowrap; /* Förhindrar radbrytning inom span */
 }
