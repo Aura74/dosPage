@@ -1,0 +1,242 @@
+[
+  {
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+46 70 123 45 67",
+    "address": "Storgatan 1",
+    "city": "Stockholm",
+    "birth_date": "1985-06-15",
+    "website": "https://johndoe.com",
+    "profile_picture": "orangeMan.png",
+    "large_picture": "orangeMan.png",
+    "coordinates": {
+      "latitude": 59.3293,
+      "longitude": 18.0686
+    }
+  },
+  {
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@example.com",
+    "phone": "+46 70 987 65 43",
+    "address": "Lilla Torget 5",
+    "city": "Göteborg",
+    "birth_date": "1990-11-23",
+    "website": "https://janesmith.com",
+    "profile_picture": "pinkLady.png",
+    "large_picture": "pinkLady.png",
+    "coordinates": {
+      "latitude": 57.7089,
+      "longitude": 11.9746
+    }
+  },
+  {
+    "first_name": "Tommy",
+    "last_name": "Thunder",
+    "email": "tommy.thunder@example.com",
+    "phone": "+46 70 111 22 33",
+    "address": "Blixgatan 22",
+    "city": "Malmö",
+    "birth_date": "1980-09-12",
+    "website": "https://tommythunder.com",
+    "profile_picture": "girl.png",
+    "large_picture": "girl.png",
+    "coordinates": {
+      "latitude": 55.604981,
+      "longitude": 13.003822
+    }
+  },
+  {
+    "first_name": "Lara",
+    "last_name": "Swift",
+    "email": "lara.swift@example.com",
+    "phone": "+46 70 333 44 55",
+    "address": "Springvägen 5",
+    "city": "Uppsala",
+    "birth_date": "1992-03-28",
+    "website": "https://laraswift.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 59.8586,
+      "longitude": 17.6389
+    }
+  },
+  {
+    "first_name": "Max",
+    "last_name": "Velocity",
+    "email": "max.velocity@example.com",
+    "phone": "+46 70 555 66 77",
+    "address": "Fartvägen 10",
+    "city": "Västerås",
+    "birth_date": "1987-11-01",
+    "website": "https://maxvelocity.com",
+    "profile_picture": "woman.png",
+    "large_picture": "woman.png",
+    "coordinates": {
+      "latitude": 59.6162,
+      "longitude": 16.5528
+    }
+  },
+  {
+    "first_name": "Ella",
+    "last_name": "Flow",
+    "email": "ella.flow@example.com",
+    "phone": "+46 70 777 88 99",
+    "address": "Harmoni Gatan 7",
+    "city": "Örebro",
+    "birth_date": "1995-07-15",
+    "website": "https://ellaflow.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 59.2753,
+      "longitude": 15.2134
+    }
+  },
+  {
+    "first_name": "Finn",
+    "last_name": "Skipper",
+    "email": "finn.skipper@example.com",
+    "phone": "+46 70 999 00 11",
+    "address": "Sjövägen 23",
+    "city": "Helsingborg",
+    "birth_date": "1983-04-20",
+    "website": "https://finnskipper.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 56.0467,
+      "longitude": 12.6944
+    }
+  },
+  {
+    "first_name": "Maya",
+    "last_name": "Whisper",
+    "email": "maya.whisper@example.com",
+    "phone": "+46 70 222 33 44",
+    "address": "Lugnvägen 4",
+    "city": "Lund",
+    "birth_date": "1988-10-05",
+    "website": "https://mayawhisper.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 55.7047,
+      "longitude": 13.191
+    }
+  },
+  {
+    "first_name": "Jack",
+    "last_name": "Hammer",
+    "email": "jack.hammer@example.com",
+    "phone": "+46 70 444 55 66",
+    "address": "Starkgatan 12",
+    "city": "Gävle",
+    "birth_date": "1981-12-22",
+    "website": "https://jackhammer.com",
+    "profile_picture": "orangeMan.png",
+    "large_picture": "orangeMan.png",
+    "coordinates": {
+      "latitude": 60.6745,
+      "longitude": 17.1413
+    }
+  },
+  {
+    "first_name": "Ruby",
+    "last_name": "Stone",
+    "email": "ruby.stone@example.com",
+    "phone": "+46 70 111 22 33",
+    "address": "Ädelstensvägen 8",
+    "city": "Umeå",
+    "birth_date": "1993-02-17",
+    "website": "https://rubystone.com",
+    "profile_picture": "pinkLady.png",
+    "large_picture": "pinkLady.png",
+    "coordinates": {
+      "latitude": 63.8258,
+      "longitude": 20.263
+    }
+  },
+  {
+    "first_name": "Leo",
+    "last_name": "Prowl",
+    "email": "leo.prowl@example.com",
+    "phone": "+46 70 555 66 77",
+    "address": "Lejongatan 14",
+    "city": "Linköping",
+    "birth_date": "1986-06-30",
+    "website": "https://leoprowl.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 58.4108,
+      "longitude": 15.6214
+    }
+  },
+  {
+    "first_name": "Nina",
+    "last_name": "Breeze",
+    "email": "nina.breeze@example.com",
+    "phone": "+46 70 777 88 99",
+    "address": "Vindvägen 9",
+    "city": "Jönköping",
+    "birth_date": "1991-08-12",
+    "website": "https://ninabreeze.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 57.7826,
+      "longitude": 14.1607
+    }
+  },
+  {
+    "first_name": "Sam",
+    "last_name": "Shadow",
+    "email": "sam.shadow@example.com",
+    "phone": "+46 70 999 00 11",
+    "address": "Skuggvägen 3",
+    "city": "Karlstad",
+    "birth_date": "1989-01-08",
+    "website": "https://samshadow.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 59.3793,
+      "longitude": 13.5036
+    }
+  },
+  {
+    "first_name": "Luna",
+    "last_name": "Star",
+    "email": "luna.star@example.com",
+    "phone": "+46 70 222 33 44",
+    "address": "Månvägen 6",
+    "city": "Sundsvall",
+    "birth_date": "1996-09-19",
+    "website": "https://lunastar.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 62.3908,
+      "longitude": 17.3069
+    }
+  },
+  {
+    "first_name": "Oscar",
+    "last_name": "Echo",
+    "email": "oscar.echo@example.com",
+    "phone": "+46 70 333 44 55",
+    "address": "Ekogatan 2",
+    "city": "Växjö",
+    "birth_date": "1994-05-10",
+    "website": "https://oscarecho.com",
+    "profile_picture": "manGreen.png",
+    "large_picture": "manGreen.png",
+    "coordinates": {
+      "latitude": 56.8777,
+      "longitude": 14.8091
+    }
+  }
+]

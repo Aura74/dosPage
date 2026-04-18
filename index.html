@@ -3,15 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>MS-DOS Styled Page</title>
+    <title>VAULT-TEC TERMINAL</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <div id="console">
-      <div id="output"></div>
-      <div id="input-line">
-        <span>C:&#92;&gt;</span><input type="text" id="user-input" autofocus />
+    <!-- CRT power-on flash overlay -->
+    <div id="power-on-flash"></div>
+
+    <!-- Scanline overlay -->
+    <div id="scanlines"></div>
+
+    <!-- Flicker overlay -->
+    <div id="flicker"></div>
+
+    <!-- Main CRT monitor frame -->
+    <div id="crt-frame">
+      <div id="crt-bezel">
+        <div id="crt-badge">
+          <span class="badge-text">ROBCO INDUSTRIES (TM) TERMLINK</span>
+        </div>
+        <div id="crt-screen">
+          <div id="console">
+            <div id="output"></div>
+            <div id="input-line">
+              <span class="prompt">C:\&gt;</span>
+              <input type="text" id="user-input" autofocus autocomplete="off" spellcheck="false" />
+              <span id="cursor-blink" class="blink">&#9608;</span>
+            </div>
+          </div>
+        </div>
+        <!-- Controls under the screen -->
+        <div id="crt-controls">
+          <div class="control-knob" id="knob-brightness" title="Toggle scanlines">
+            <div class="knob-inner"></div>
+            <span>SCAN</span>
+          </div>
+          <div class="control-knob" id="knob-color" title="Toggle color: Green / Amber / White">
+            <div class="knob-inner"></div>
+            <span>COLOR</span>
+          </div>
+          <div class="control-knob" id="knob-sound" title="Toggle sound">
+            <div class="knob-inner"></div>
+            <span>AUDIO</span>
+          </div>
+          <div class="control-indicator">
+            <div class="led led-on"></div>
+            <span>PWR</span>
+          </div>
+        </div>
       </div>
     </div>
 

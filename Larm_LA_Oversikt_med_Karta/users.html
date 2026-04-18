@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LA | Studio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="cellular-outline"></ion-icon
+              ></span>
+              <span class="title" style="font-size: 1.5em; font-weight: 500"
+                >Lars Asplund</span
+              >
+            </a>
+          </li>
+          <li class="hovered">
+            <a href="index.html">
+              <span class="icon"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Översikt</span>
+            </a>
+          </li>
+          <li class="hovered">
+            <a href="users.html">
+              <span class="icon"
+                ><ion-icon name="accessibility-outline"></ion-icon
+              ></span>
+              <span class="title">Användare</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></span>
+              <span class="title">Meddelanden</span>
+            </a>
+          </li>
+          <li>
+            <a href="larms.html">
+              <span class="icon"
+                ><ion-icon name="skull-outline"></ion-icon
+              ></span>
+              <span class="title">Skaderapport</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"
+                ><ion-icon name="construct-outline"></ion-icon
+              ></span>
+              <span class="title">Inställningar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+              <span class="title">Säkerhet</span>
+            </a>
+          </li>
+          <li>
+            <a href="karta.html">
+              <span class="icon"
+                ><ion-icon name="location-outline"></ion-icon
+              ></span>
+              <span class="title">Karta</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Sök" />
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+          <!-- userImg -->
+          <div class="user">
+            <img src="img/man.png" />
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div id="userCount" class="numbers">0</div>
+              <div class="cardName">Antal användare</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="people-outline"></ion-icon>
+            </div>
+          </div>
+
+          <div class="card">
+            <div>
+              <div class="numbers">32</div>
+              <div class="cardName">Larm idag</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="notifications-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">169</div>
+              <div class="cardName">Meddelande i chatten</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">25%</div>
+              <div class="cardName">Täckning</div>
+            </div>
+            <div class="iconBx">
+              <ion-icon name="wifi-outline"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="recentCustomers">
+            <div class="cardHeader">
+              <h2>Senaste användare</h2>
+            </div>
+            <ul id="user-list">
+              <!-- Användare kommer här från JavaScript -->
+            </ul>
+          </div>
+
+          <!-- Ny detaljsektion -->
+          <div class="user-details">
+            <div class="details-text">
+              <p><strong>Namn:</strong> <span id="detail-name"></span></p>
+              <p><strong>Email:</strong> <span id="detail-email"></span></p>
+              <p><strong>Telefon:</strong> <span id="detail-phone"></span></p>
+              <p><strong>Adress:</strong> <span id="detail-address"></span></p>
+              <p><strong>Stad:</strong> <span id="detail-city"></span></p>
+              <p>
+                <strong>Födelsedatum:</strong>
+                <span id="detail-birth_date"></span>
+              </p>
+              <p>
+                <strong>Hemsida:</strong>
+                <a id="detail-website" href="#" target="_blank"></a>
+              </p>
+            </div>
+            <div class="details-image">
+              <img id="detail-picture" src="" alt="Användarbild" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="my_chart.js"></script>
+    <script src="app.js"></script>
+    <script>
+      // MenuToggle
+      let toggle = document.querySelector(".toggle");
+      let navigation = document.querySelector(".navigation");
+      let main = document.querySelector(".main");
+
+      toggle.onclick = function () {
+        navigation.classList.toggle("active");
+        main.classList.toggle("active");
+      };
+
+      // add hovered class in selected list item
+      let list = document.querySelectorAll(".navigation li");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("hovered"));
+        this.classList.add("hovered");
+      }
+      list.forEach((item) => item.addEventListener("mouseover", activeLink));
+    </script>
+  </body>
+</html>
